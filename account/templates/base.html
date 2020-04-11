@@ -1,4 +1,5 @@
 {% load staticfiles %}
+<<<<<<< HEAD
 <! DOCTYPE html>
 <html>
 <head>
@@ -14,4 +15,21 @@
         {% endblock %}
     </div>
 </body>
+=======
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        <link href="{% static 'css/base.css' %}" rel="stylesheet">
+    </head>
+    <body>
+        <div id="header">
+            <span class="logo">Bookmarks</span>
+        </div>
+        <div id="content">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </body>
+>>>>>>> 3568faee6a4a89277b2630924881c788c0d2c89e
 </html>

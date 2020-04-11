@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 {% extends "base.html" %}
+=======
+{% extends 'base.html' %}
+>>>>>>> 3568faee6a4a89277b2630924881c788c0d2c89e
 
 {% block title %}Logowanie{% endblock %}
 
 {% block content %}
+<<<<<<< HEAD
     <h1>Logowanie</h1>
     <p>Wypełnij poniższy formularz, aby się zalogować:</p>
     <form action="." method="post">
@@ -10,4 +15,14 @@
         {% csrf_token %}
         <p><input type="submit" value="Zaloguj"></p>
     </form>
+=======
+
+    <h1>Logowanie</h1>
+    <p>Wypełnij poniższy formularz, aby się zalogować:</p>
+<form action="." method="post">
+    {{ form.as_p }}
+    {% csrf_token %}
+    <p><input type="submit" value="Zaloguj"></p>
+</form>
+>>>>>>> 3568faee6a4a89277b2630924881c788c0d2c89e
 {% endblock %}
