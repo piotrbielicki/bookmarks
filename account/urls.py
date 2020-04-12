@@ -39,4 +39,6 @@ urlpatterns = [
         name='password_reset_complete'),
     #Adres URL przeznaczony do obsługi rejestracji użytkownika.
     url(r'^register/$', views.register, name='register'),
+    #Adres URL przeznaczony do obsłuhi edycji profilu.
+    url(r'^edit/$', views.edit, name='edit')
 ]
